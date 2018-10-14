@@ -84,7 +84,7 @@ class Events
                 $sendString = "AD9911" . $serial_number . "06000000" . $check_sum . "0000000200000D0A";
                 $event_num = substr($hex_data, -14, 4);// 报警事件
                 $sector = substr($hex_data, -10, 4);// 防区
-                $alarm_res = self::_curl("http://www.huaxue.com/alarm_message", [
+                $alarm_res = self::_curl("http://47.93.125.139/alarm_message", [
                     'client_id' => $client_id,
                     'ip' => $ip,
                     'type' => $type,
