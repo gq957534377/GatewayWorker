@@ -69,7 +69,7 @@ class Events
 //        echo $message;
 
         $hex_data = bin2hex($message);
-        var_dump($hex_data);
+//        var_dump($hex_data);
 //        $hex_data="ad03020114000000391437111c040c1434562802bfc8b4be11300002000d0a";
         $type = substr($hex_data, 0, 6);
         $serial_number = substr($hex_data, 6, 2);// 序列号
